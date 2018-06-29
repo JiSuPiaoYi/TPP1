@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>{{username}}您好！</p>
+<a href="{{url_for('user.activate_account',_external=Ture)}}?username={{username}}">激活</a>
+<p>如果点击不成功请赋值该链接到浏览器！</p>
+{{url_for('user.activate_account', _external=True)}}
+</body>
+
+</html>
